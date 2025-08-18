@@ -15,5 +15,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Website/", // 👈 repo ka naam
+  base: "/Website/", // 👈 बहुत जरूरी!
 });
