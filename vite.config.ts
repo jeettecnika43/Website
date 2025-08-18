@@ -3,7 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { viteSourceLocator } from "@metagptx/vite-plugin-source-locator";
 
-export default defineConfig({
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => ({
   plugins: [
     viteSourceLocator({
       prefix: "mgx",
@@ -15,5 +16,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Website/", // 👈 बहुत जरूरी!
-});
+}));
