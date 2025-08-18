@@ -10,5 +10,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Website/",  // 👈 yeh add karna mandatory hai
+  base: "/assets/...",  // 👈 yeh add karna mandatory hai
 }))
