@@ -4,6 +4,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';
+import { HashRouter } from "react-router-dom";
+
 
 const queryClient = new QueryClient();
 
@@ -17,6 +19,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <BrowserRouter basename="/Website">
+  <App />
+  </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
