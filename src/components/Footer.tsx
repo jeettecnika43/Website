@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-gray-400 mb-4 md:mb-0">
-            © 2024 M/S JEETTECNIKA. All rights reserved. | GSTIN: 10AAQFJ6650B1ZO
+            © 2025 M/S JEETTECNIKA. All rights reserved. | GSTIN: 10AAQFJ6650B1ZO
           </div>
           <div className="text-sm text-gray-400">
             ISO 9001:2015 Certified | Registered under Indian Partnership Act, 1932
