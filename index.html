@@ -1,259 +1,1865 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>M/s JEETTECNIKA | Engineering Trust. Delivering Excellence.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="M/s JEETTECNIKA is a Government Approved Electrical Contractor providing engineering solutions to Indian Railways and allied industries. ISO 9001:2015 &amp; ISO 14001:2015 Certified.">
-  <meta name="author" content="M/s JEETTECNIKA">
-  <meta name="keywords" content="JEETTECNIKA, electrical contractor, Indian Railways, engineering solutions, AMC, Bihar, RWP Bela, ISO certified">
-  <meta name="theme-color" content="#003366">
-  <meta property="og:title" content="M/s JEETTECNIKA - Engineering Trust. Delivering Excellence.">
-  <meta property="og:description" content="Government Approved Electrical Contractor serving Indian Railways and allied industries since 2020.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://mgx-backend-cdn.metadl.com/generate/images/338194/2026-01-03/6d6c7839-4b0b-4ac1-b979-403efa61dcd9.png">
-  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M/S JEETTECNIKA | Complete Engineering Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.7;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        /* Header */
+        .main-header {
+            background: linear-gradient(135deg, #0b3c78 0%, #1a4f8a 100%);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .header-top {
+            background: #0a3360;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-contact {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .header-contact span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .header-contact i {
+            color: #FFD700;
+        }
+        
+        .header-bottom {
+            padding: 15px 0;
+        }
+        
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 36px;
+            color: #FFD700;
+        }
+        
+        .logo-text h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+        
+        .logo-text p {
+            font-size: 13px;
+            color: #FFD700;
+            margin-top: 3px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
+            padding: 8px 0;
+            position: relative;
+        }
+        
+        .nav-menu a:hover {
+            color: #FFD700;
+        }
+        
+        .nav-menu a.active {
+            color: #FFD700;
+        }
+        
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #FFD700;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .header-badges {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .badge {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(11, 60, 120, 0.85), rgba(26, 79, 138, 0.9)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 100px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        
+        .hero-highlights {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+            min-width: 250px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .highlight-box h3 {
+            color: #FFD700;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #0b3c78;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: #FFD700;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            color: #666;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Company Overview */
+        .company-overview {
+            background: white;
+        }
+        
+        .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .overview-text h3 {
+            font-size: 28px;
+            color: #0b3c78;
+            margin-bottom: 20px;
+        }
+        
+        .overview-text p {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .overview-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-top: 3px solid #FFD700;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0b3c78;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        /* Services Section */
+        .services {
+            background: #f8f9fa;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .service-header {
+            background: linear-gradient(135deg, #0b3c78 0%, #1a4f8a 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .service-header h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        
+        .service-header i {
+            font-size: 40px;
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+        
+        .service-body {
+            padding: 30px;
+        }
+        
+        .service-body p {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .service-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-features i {
+            color: #27ae60;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        /* Products Section */
+        .products {
+            background: white;
+        }
+        
+        .products-header {
+            text-align: center;
+            background: linear-gradient(135deg, #0b3c78 0%, #1a4f8a 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .products-header h2 {
+            font-size: 32px;
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+        
+        .products-header p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 3px solid #FFD700;
+        }
+        
+        .product-title {
+            background: #0b3c78;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .product-title h3 {
+            font-size: 24px;
+            color: #FFD700;
+        }
+        
+        .product-body {
+            padding: 30px;
+        }
+        
+        .product-description {
+            margin-bottom: 25px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .product-benefits h4 {
+            color: #0b3c78;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .benefits-list {
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .benefits-list i {
+            color: #27ae60;
+            margin-right: 10px;
+        }
+        
+        /* Demo Videos Section */
+        .demo-videos {
+            background: #f8f9fa;
+        }
+        
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .video-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.05);
+        }
+        
+        .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 215, 0, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0b3c78;
+            font-size: 28px;
+            transition: all 0.3s;
+        }
+        
+        .video-thumbnail:hover .video-play-btn {
+            background: rgba(255, 215, 0, 1);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .video-info {
+            padding: 25px;
+        }
+        
+        .video-info h3 {
+            color: #0b3c78;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .video-info p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .video-link {
+            display: inline-block;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        
+        .video-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Registration Details */
+        .registration {
+            background: white;
+        }
+        
+        .registration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .reg-item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s;
+            border-top: 3px solid #0b3c78;
+        }
+        
+        .reg-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .reg-icon {
+            font-size: 30px;
+            color: #0b3c78;
+            margin-bottom: 15px;
+        }
+        
+        .reg-item h4 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .reg-item p {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .additional-info {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .additional-info h3 {
+            color: #0b3c78;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        /* Achievements */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .achievement-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-top: 4px solid #FFD700;
+        }
+        
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .achievement-icon {
+            font-size: 40px;
+            color: #0b3c78;
+            margin-bottom: 20px;
+        }
+        
+        .achievement-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .achievement-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Email Contacts */
+        .email-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .email-category {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .email-category h3 {
+            color: #0b3c78;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FFD700;
+            font-size: 20px;
+        }
+        
+        .email-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .email-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        
+        .email-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+        
+        .email-icon {
+            width: 40px;
+            height: 40px;
+            background: #0b3c78;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        
+        .email-details h4 {
+            color: #333;
+            margin-bottom: 3px;
+            font-size: 15px;
+        }
+        
+        .email-details a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .email-details a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contact-info h3 {
+            color: #0b3c78;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        
+        .contact-item-icon {
+            background: #0b3c78;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+        
+        .contact-item-details h4 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-item-details p {
+            color: #666;
+        }
+        
+        .direct-contact {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .direct-contact h3 {
+            color: #0b3c78;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        
+        .direct-contact p {
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background: #0b3c78;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .contact-btn:hover {
+            background: #0a3360;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(11, 60, 120, 0.2);
+        }
+        
+        .contact-btn.phone {
+            background: #27ae60;
+        }
+        
+        .contact-btn.phone:hover {
+            background: #219653;
+        }
+        
+        .contact-btn.email {
+            background: #e74c3c;
+        }
+        
+        .contact-btn.email:hover {
+            background: #c0392b;
+        }
+        
+        /* Footer */
+        .main-footer {
+            background: linear-gradient(135deg, #0b3c78 0%, #1a4f8a 100%);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-about h3 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .footer-about p {
+            color: #ddd;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .footer-certificates {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cert-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .footer-links h4,
+        .footer-contact h4 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: #FFD700;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 15px;
+            color: #ddd;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .footer-contact i {
+            color: #FFD700;
+            margin-top: 3px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .overview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .section-title h2 {
+                font-size: 32px;
+            }
+            
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-top {
+                display: none;
+            }
+            
+            .header-main {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 30px;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .overview-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .services-grid,
+            .products-grid,
+            .registration-grid,
+            .achievements-grid,
+            .email-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .video-thumbnail {
+                height: 200px;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 26px;
+            }
+            
+            .highlight-box {
+                min-width: 100%;
+            }
+            
+            .overview-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title h2 {
+                font-size: 24px;
+            }
+            
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container header-top-content">
+                <div class="header-contact">
+                    <span><i class="fas fa-phone"></i> +91-95343-06606</span>
+                    <span><i class="fas fa-envelope"></i> contact@jeettecnika.in</span>
+                </div>
+                <div class="header-badges">
+                    <span class="badge">ISO 9001:2015 Certified Company</span>
+                    <span class="badge">ISO 14001:2015 Certified Company</span>
+                    <span class="badge">MSME Registered</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-bottom">
+            <div class="container header-main">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>M/S JEETTECNIKA</h1>
+                        <p>Engineering Trust • Delivering Excellence</p>
+                    </div>
+                </div>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#videos">Demo Videos</a></li>
+                        <li><a href="#registrations">Registrations</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#emails">Email Contacts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <div class="logo">J</div>
-      <div>
-        <h1>M/s JEETTECNIKA</h1>
-        <p class="tagline">Engineering Trust. Delivering Excellence.</p>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Complete Engineering Solutions Provider</h1>
+            <p>M/S JEETTECNIKA is a dynamic partnership firm established on 24 November 2020 and registered under the Indian Partnership Act, 1932. Headquartered in Saran, Bihar, we are dedicated to providing reliable, compliant, and innovative engineering solutions to Indian Railways and allied industrial sectors.</p>
+            
+            <div class="hero-highlights">
+                <div class="highlight-box">
+                    <h3>Government Approved</h3>
+                    <p>Licensed Electrical Contractor </p>
+                </div>
+                <div class="highlight-box">
+                    <h3>ISO Certified</h3>
+                    <p>ISO 9001:2015 & ISO 14001:2015 Certified Company</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Exclusive Dealer</h3>
+                    <p>For SUN PETROCHEMICALS in North India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section id="overview" class="company-overview section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Company Overview</h2>
+                <p>Trusted engineering partner since 2020</p>
+            </div>
+            
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>About M/S JEETTECNIKA</h3>
+                    <p>Established on 24 November 2020 and registered under the Indian Partnership Act, 1932. Headquartered in Saran, Bihar, near the Rail Wheel Plant (RWP), Bela, we are dedicated to providing reliable, compliant, and innovative engineering solutions to Indian Railways and allied industrial sectors.</p>
+                    <p>We blend traditional engineering expertise with modern technology and sustainable practices to deliver dependable solutions across electrical, mechanical, and civil engineering disciplines. Our technically skilled workforce undergoes continuous training to stay aligned with evolving industry standards and safety norms.</p>
+                    
+                    <div class="overview-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Skilled Employees</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image">
+                    <div style="background: #0b3c78; color: white; padding: 40px; border-radius: 10px; height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                        <i class="fas fa-award" style="font-size: 60px; color: #FFD700; margin-bottom: 20px;"></i>
+                        <h3 style="color: #FFD700; margin-bottom: 15px; font-size: 24px;">Our Mission</h3>
+                        <p>To deliver superior engineering solutions through innovation, quality, and sustainable practices while maintaining the highest standards of safety and client satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Professional Services</h2>
+                <p>Comprehensive engineering solutions for industrial and commercial needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- AMC Service -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Annual Maintenance Contracts (AMC)</h3>
+                    </div>
+                    <div class="service-body">
+                        <p>We provide comprehensive Annual Maintenance Contracts (AMC) designed to ensure optimal performance and longevity of your electrical and mechanical systems. Our AMC services are tailored to industrial and commercial clients, focusing on preventive maintenance, rapid breakdown response, and systematic equipment health monitoring.</p>
+                        
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Preventive maintenance scheduling and execution</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 emergency breakdown support</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive equipment health monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Spare parts management and inventory control</li>
+                            <li><i class="fas fa-check-circle"></i> Performance optimization and energy audits</li>
+                            <li><i class="fas fa-check-circle"></i> Compliance documentation and reporting</li>
+                            <li><i class="fas fa-check-circle"></i> Technical training for maintenance staff</li>
+                            <li><i class="fas fa-check-circle"></i> Annual maintenance reports and recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Custom Engineering Solutions -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Customized Engineering Solutions</h3>
+                    </div>
+                    <div class="service-body">
+                        <p>We excel in delivering customized engineering solutions that address unique industrial challenges. Our team of experienced engineers combines technical expertise with innovative thinking to design, implement, and optimize systems that enhance operational efficiency, improve safety, and reduce costs across multiple engineering disciplines.</p>
+                        
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Electrical system design and installation</li>
+                            <li><i class="fas fa-check-circle"></i> Industrial automation and control systems</li>
+                            <li><i class="fas fa-check-circle"></i> Mechanical equipment retrofitting and modernization</li>
+                            <li><i class="fas fa-check-circle"></i> Energy efficiency audits and improvements</li>
+                            <li><i class="fas fa-check-circle"></i> Safety system design and implementation</li>
+                            <li><i class="fas fa-check-circle"></i> Project management and execution</li>
+                            <li><i class="fas fa-check-circle"></i> Technical documentation and as-built drawings</li>
+                            <li><i class="fas fa-check-circle"></i> Commissioning and testing services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section-padding">
+        <div class="container">
+            <div class="products-header">
+                <h2>Exclusive Authorized Dealer for North India</h2>
+                <p>M/S JEETTECNIKA is proud to be the Exclusive Authorized Dealer for North India for SUN PETROCHEMICALS</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- NWK-99 OPP -->
+                <div class="product-card">
+                    <div class="product-title">
+                        <h3>NWK-99 OPP</h3>
+                        <p>Biodegradable Panel Cleaning Technology</p>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-description">
+                            <p>Revolutionizing electrical maintenance with eco-friendly solutions. NWK-99 OPP is a breakthrough in panel cleaning technology that allows safe cleaning of live electrical equipment without shutdowns.</p>
+                        </div>
+                        
+                        <div class="product-benefits">
+                            <h4>Key Benefits:</h4>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check"></i> Safe for live equipment cleaning</li>
+                                <li><i class="fas fa-check"></i> 100% Biodegradable & Eco-friendly</li>
+                                <li><i class="fas fa-check"></i> Zero damage to electrical components</li>
+                                <li><i class="fas fa-check"></i> Prevents corrosion & extends equipment life</li>
+                                <li><i class="fas fa-check"></i> Non-conductive and non-flammable</li>
+                                <li><i class="fas fa-check"></i> Reduces maintenance downtime</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NWK-747 -->
+                <div class="product-card">
+                    <div class="product-title">
+                        <h3>NWK-747</h3>
+                        <p>Advanced Industrial Cleaner</p>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-description">
+                            <p>High-performance solution for toughest industrial cleaning challenges. NWK-747 effectively removes grease, oil, carbon deposits, and other industrial contaminants from machinery and equipment.</p>
+                        </div>
+                        
+                        <div class="product-benefits">
+                            <h4>Key Benefits:</h4>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check"></i> Powerful degreasing action</li>
+                                <li><i class="fas fa-check"></i> Removes tough industrial deposits</li>
+                                <li><i class="fas fa-check"></i> Safe for metals & sensitive surfaces</li>
+                                <li><i class="fas fa-check"></i> Improves equipment efficiency</li>
+                                <li><i class="fas fa-check"></i> Prevents equipment breakdowns</li>
+                                <li><i class="fas fa-check"></i> Extends equipment service life</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Videos Section -->
+    <section id="videos" class="demo-videos section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Product Demonstration Videos</h2>
+                <p>Watch our premium SUN PETROCHEMICALS products in action</p>
+            </div>
+            
+            <div class="videos-grid">
+                <!-- Video 1: NWK-99 OPP -->
+                <div class="video-card">
+                    <div class="video-thumbnail" onclick="openVideo('BGzvRop_g_Y')">
+                        <img src="https://img.youtube.com/vi/BGzvRop_g_Y/maxresdefault.jpg" alt="NWK-99 OPP Demo" id="video1-thumb">
+                        <div class="video-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>NWK-99 OPP Biodegradable Panel Cleaner</h3>
+                        <p>Experience the revolutionary cleaning technology that safely cleans live electrical panels without shutdowns. Eco-friendly and highly effective.</p>
+                        <p><strong>Video Duration:</strong> 4:32 minutes</p>
+                        <a href="https://www.youtube.com/watch?v=BGzvRop_g_Y" target="_blank" class="video-link">
+                            <i class="fab fa-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Video 2: NWK-747 -->
+                <div class="video-card">
+                    <div class="video-thumbnail" onclick="openVideo('NtXHSwtyzak')">
+                        <img src="https://img.youtube.com/vi/NtXHSwtyzak/maxresdefault.jpg" alt="NWK-747 Demo" id="video2-thumb">
+                        <div class="video-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>NWK-747 Advanced Industrial Cleaner</h3>
+                        <p>Watch how NWK-747 tackles the toughest industrial cleaning challenges with superior performance and safety for all surfaces.</p>
+                        <p><strong>Video Duration:</strong> 5:18 minutes</p>
+                        <a href="https://www.youtube.com/watch?v=NtXHSwtyzak" target="_blank" class="video-link">
+                            <i class="fab fa-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                
+                
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Details -->
+    <section id="registrations" class="registration section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Legal Identity & Registrations</h2>
+                <p>Official registration and identification details</p>
+            </div>
+            
+            <div class="registration-grid">
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Full Address</h4>
+                    <p>Mohan Kothiya, Akbarpur, Dariyapur Block, Saran, Bihar-841207</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Primary Phone</h4>
+                    <p>+91-95343-06606</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>contact@jeettecnika.in</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Website</h4>
+                    <p>www.jeettecnika.in</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h4>GSTIN</h4>
+                    <p>10AAQFJ6650B1ZO</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h4>PAN</h4>
+                    <p>AAQFJ6650B</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4>MSME</h4>
+                    <p>BR-31-0002033</p>
+                </div>
+                
+                <div class="reg-item">
+                    <div class="reg-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h4>IREPS ID</h4>
+                    <p>1049784</p>
+                </div>
+            </div>
+            
+            <div class="additional-info">
+                <h3>Additional Information</h3>
+                <p><strong>Firm Name:</strong> M/S JEETTECNIKA | <strong>Registered Under:</strong> Indian Partnership Act, 1932 | <strong>Incorporation Date:</strong> 24 November 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section-padding" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Achievements</h2>
+                <p>Milestones and accomplishments</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>ISO Certifications</h3>
+                    <p>Certified with ISO 9001:2015 for Quality Management Systems and ISO 14001:2015 for Environmental Management Systems, demonstrating our commitment to excellence and sustainability.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Exclusive Partnership</h3>
+                    <p>Appointed as the Exclusive Authorized Dealer for North India for SUN PETROCHEMICALS, distributing premium products like NWK-99 OPP and NWK-747.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Railway Approvals</h3>
+                    <p>Government Approved Electrical Contractor for Indian Railways with successful completion of multiple projects in railway infrastructure and maintenance.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Employment Generation</h3>
+                    <p>Created employment opportunities for over 50 skilled technicians and engineers in Bihar, contributing to regional development and skill enhancement.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Project Excellence</h3>
+                    <p>Successfully completed 100+ engineering projects with zero major safety incidents and 95% client satisfaction rate across industrial and government sectors.</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Practices</h3>
+                    <p>Pioneered the use of eco-friendly NWK-99 OPP biodegradable cleaner in North India, promoting sustainable industrial maintenance practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Contacts -->
+    <section id="emails" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Email Contacts</h2>
+                <p>Contact us through our dedicated email addresses for specific inquiries</p>
+            </div>
+            
+            <div class="email-categories">
+                <div class="email-category">
+                    <h3>General & Administrative</h3>
+                    <div class="email-list">
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Proprietor</h4>
+                                <a href="mailto:bishwajeet@jeettecnika.in">bishwajeet@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Administration</h4>
+                                <a href="mailto:admin@jeettecnika.in">admin@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>General Contact</h4>
+                                <a href="mailto:contact@jeettecnika.in">contact@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Customer Care</h4>
+                                <a href="mailto:care@jeettecnika.in">care@jeettecnika.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="email-category">
+                    <h3>Business & Operations</h3>
+                    <div class="email-list">
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Information</h4>
+                                <a href="mailto:info@jeettecnika.in">info@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Partnerships</h4>
+                                <a href="mailto:partners@jeettecnika.in">partners@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Projects</h4>
+                                <a href="mailto:projects@jeettecnika.in">projects@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Sales</h4>
+                                <a href="mailto:sales@jeettecnika.in">sales@jeettecnika.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="email-category">
+                    <h3>Services & Support</h3>
+                    <div class="email-list">
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Services</h4>
+                                <a href="mailto:service@jeettecnika.in">service@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Maintenance</h4>
+                                <a href="mailto:maintenance@jeettecnika.in">maintenance@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Technical Support</h4>
+                                <a href="mailto:support@jeettecnika.in">support@jeettecnika.in</a>
+                            </div>
+                        </div>
+                        <div class="email-item">
+                            <div class="email-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="email-details">
+                                <h4>Help & Queries</h4>
+                                <a href="mailto:help@jeettecnika.in">help@jeettecnika.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team for inquiries and support</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Registered Office</h4>
+                            <p>Mohan Kothiya, Akbarpur, Dariyapur Block, Saran, Bihar-841207</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Phone Numbers</h4>
+                            <p>Primary: +91-95343-06606</p>
+                            <p>Alternate: +91-62029-25061</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Email Address</h4>
+                            <p>contact@jeettecnika.in</p>
+                            <p>info@jeettecnika.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Website</h4>
+                            <p>www.jeettecnika.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                            <p>Sunday: Emergency Services Only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="direct-contact">
+                    <h3>Direct Contact Options</h3>
+                    <p>For immediate assistance or inquiries, you can reach us directly through any of the following methods:</p>
+                    
+                    <div class="contact-buttons">
+                        <a href="tel:+919534306606" class="contact-btn phone">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                        
+                        <a href="mailto:contact@jeettecnika.in" class="contact-btn email">
+                            <i class="fas fa-envelope"></i>
+                            Email Us
+                        </a>
+                        
+                        <a href="https://wa.me/919534306606" target="_blank" class="contact-btn" style="background: #25D366;">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <h4 style="color: #0b3c78; margin-bottom: 15px;">Visit Our Office</h4>
+                        <p>Feel free to visit our registered office during business hours for face-to-face consultation and project discussions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>JEETTECNIKA</h3>
+                    <p>Engineering Trust. Delivering Excellence. We provide reliable, compliant, and innovative engineering solutions to Indian Railways and allied industrial sectors.</p>
+                    
+                    <div class="footer-certificates">
+                        <span class="cert-badge">ISO 9001:2015 Certified Company</span>
+                        <span class="cert-badge">ISO 14001:2015 Certified Company</span>
+                        <span class="cert-badge">MSME Registered</span>
+                        <span class="cert-badge">Government Licensed Electrical Contractor</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#overview"><i class="fas fa-chevron-right"></i> Company Overview</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Our Products</a></li>
+                        <li><a href="#videos"><i class="fas fa-chevron-right"></i> Demo Videos</a></li>
+                        <li><a href="#registrations"><i class="fas fa-chevron-right"></i> Registrations</a></li>
+                        <li><a href="#achievements"><i class="fas fa-chevron-right"></i> Achievements</a></li>
+                        <li><a href="#emails"><i class="fas fa-chevron-right"></i> Email Contacts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Mohan Kothiya, Akbarpur, Dariyapur Block, Saran, Bihar-841207</p>
+                    <p><i class="fas fa-phone"></i> +91-95343-06606</p>
+                    <p><i class="fas fa-envelope"></i> contact@jeettecnika.in</p>
+                    <p><i class="fas fa-globe"></i> www.jeettecnika.in</p>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <a href="#" style="color: #FFD700; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #FFD700; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #FFD700; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" style="color: #FFD700; font-size: 20px;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 M/S JEETTECNIKA. All Rights Reserved. | GSTIN: 10AAQFJ6650B1ZO | PAN: AAQFJ6650B | MSME: BR-31-0002033</p>
+                <p style="margin-top: 10px;">Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> for Engineering Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center;">
+        <div style="position: relative; width: 90%; max-width: 900px; background: #000; border-radius: 10px; overflow: hidden;">
+            <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: #e74c3c; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center;">×</button>
+            <div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+                <iframe id="videoFrame" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
-    <div class="header-actions">
-      <a class="btn btn-outline" href="#contact">Contact</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    </div>
-  </div>
-  <nav class="main-nav" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#compliance">Compliance</a>
-      <a href="#leadership">Leadership</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
 
-<section class="hero">
-  <div class="container">
-    <h2>Reliable, Compliant Engineering Solutions for Indian Railways & Industry</h2>
-    <p class="lead">Government-approved electrical contractor delivering sustainable, data-driven and precision-engineered services — AMC, machining, retrofits and liaison support.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-primary" href="#services">Our Services</a>
-      <a class="btn btn-ghost" href="#contact">Request Quote</a>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>
-      M/s JEETTECNIKA is a partnership firm established on <strong>24 November 2020</strong>,
-      registered under the Indian Partnership Act, 1932. Headquartered at
-      <strong>Saran, Bihar</strong>, near Rail Wheel Plant (RWP), Bela.
-    </p>
-    <p>
-      We deliver reliable, compliant, and innovative engineering solutions across
-      <strong>Electrical, Mechanical, Civil Engineering, and Machining</strong> domains,
-      integrating traditional expertise with modern and sustainable technologies.
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>Vision</h2>
-    <p>
-      To become India’s most trusted and innovative engineering solutions provider
-      for Indian Railways and allied industries.
-    </p>
-
-    <h2>Mission</h2>
-    <ul>
-      <li>World-class, cost-effective & eco-friendly solutions</li>
-      <li>Advanced and data-driven technologies</li>
-      <li>Strict safety and statutory compliance</li>
-      <li>Skilled local manpower development in Bihar</li>
-      <li>Transparency and client-first approach</li>
-    </ul>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <h2>Nature of Business & Services</h2>
-
-    <div class="services-grid">
-      <div class="card">
-        <h3>Annual Maintenance Contracts (AMC)</h3>
-        <ul>
-          <li>Preventive & corrective maintenance</li>
-          <li>NWK-99 OPP biodegradable panel cleaning</li>
-          <li>Up to 15% cost reduction & 20% panel life increase</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Customized Engineering Solutions</h3>
-        <ul>
-          <li>Electrical & mechanical modernization</li>
-          <li>Retrofitting and automation</li>
-          <li>System troubleshooting and optimization</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Machining Job Work & Customized Orders</h3>
-        <ul>
-          <li>Precision machining as per approved drawings & QAP</li>
-          <li>Railway, PSU, OEM & industrial applications</li>
-          <li>Single-point accountability & end-to-end coordination</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Authorized Liaison Services</h3>
-        <ul>
-          <li>OEM & industrial coordination</li>
-          <li>Inspection & statutory approvals</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="compliance">
-  <div class="container">
-    <h2>Legal Identity & Compliance</h2>
-    <ul>
-      <li><strong>GSTIN:</strong> 10AAQFJ6650B1ZO</li>
-      <li><strong>PAN:</strong> AAQFJ6650B</li>
-      <li><strong>MSME:</strong> BR-31-0002033</li>
-      <li><strong>IREPS ID:</strong> 1049784</li>
-      <li><strong>DPIIT:</strong> Startup India Recognized</li>
-      <li><strong>ISO:</strong> 9001:2015 & 14001:2015</li>
-    </ul>
-
-    <p class="badge">
-      Government Approved Electrical Contractor
-    </p>
-  </div>
-</section>
-
-<section id="leadership">
-  <div class="container">
-    <h2>Leadership</h2>
-    <p>
-      <strong>Mr. Bishwajeet Kumar Sharma — Partner</strong><br>
-      Engineering professional with 20+ years of experience in railway and industrial sectors,
-      serving as official liaison for Zircar Refractories Ltd. at RWP Bela.
-    </p>
-  </div>
-</section>
-
-<section id="core-values">
-  <div class="container">
-    <h2>Core Values</h2>
-    <p>
-      Integrity & Transparency • Quality Commitment • Customer Satisfaction •
-      Innovation & Safety • Environmental Responsibility • Teamwork •
-      Respect & Inclusion • Social Impact • Reliability • Continuous Learning
-    </p>
-  </div>
-</section>
-
-<section id="csr">
-  <div class="container">
-    <h2>Corporate Social Responsibility (CSR)</h2>
-    <p>
-      M/s JEETTECNIKA runs technical skill development training for youth in Bihar,
-      promotes eco-friendly industrial practices, and supports regional employment
-      and industrial empowerment.
-    </p>
-  </div>
-</section>
-
-<section id="future-plans">
-  <div class="container">
-    <h2>Future Plans (By 2026)</h2>
-    <ul>
-      <li>Deploy IoT-based monitoring systems for railways</li>
-      <li>Expand large-scale AMC programs using NWK-99 OPP technology</li>
-      <li>Initiatives in renewable and clean-energy engineering</li>
-      <li>Forge global OEM and refractory partnerships</li>
-      <li>Continue industrial workforce development in Bihar</li>
-    </ul>
-  </div>
-</section>
-
-<section id="achievements">
-  <div class="container">
-    <h2>Key Achievements</h2>
-    <ul class="achievements">
-      <li class="achievement">Recognized for Timely Delivery by RWP Bela (2022)</li>
-      <li class="achievement">15% AMC cost reduction using NWK-99 OPP technology</li>
-      <li class="achievement">50+ youth trained & employed</li>
-      <li class="achievement">Zero-downtime refractory supply coordination</li>
-    </ul>
-  </div>
-</section>
-
-<section id="videos">
-  <div class="container">
-    <h2>Our Work — Video</h2>
-    <p class="lead">A short showcase of our work and on-site processes.</p>
-
-    <div class="videos-grid">
-      <div class="video-wrap">
-        <a class="video-thumb" href="https://www.youtube.com/watch?v=BGzvRop_g_Y" data-vid="BGzvRop_g_Y" aria-label="Play JEETTECNIKA video 1">
-          <img src="https://img.youtube.com/vi/BGzvRop_g_Y/hqdefault.jpg" alt="JEETTECNIKA video thumbnail 1">
-          <span class="play-btn" aria-hidden="true">▶</span>
-        </a>
-      </div>
-
-      <div class="video-wrap">
-        <a class="video-thumb" href="https://www.youtube.com/watch?v=NtXHSwtyzak" data-vid="NtXHSwtyzak" aria-label="Play JEETTECNIKA video 2">
-          <img src="https://img.youtube.com/vi/NtXHSwtyzak/hqdefault.jpg" alt="JEETTECNIKA video thumbnail 2">
-          <span class="play-btn" aria-hidden="true">▶</span>
-        </a>
-      </div>
-    </div>
-    
-  </div>
-  
-</section>
-
-<section id="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p>
-      📍 Mohan Kothiya, Akbarpur Panchayat,<br>
-      Dariyapur Block, Saran, Bihar – 841207
-    </p>
-    <p>📞 +91-9534306606</p>
-    <p>
-      📧 contact@jeettecnika.in<br>
-      info@jeettecnika.in<br>
-      projects@jeettecnika.in
-    </p>
-    <p>🌐 www.jeettecnika.in</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 M/s JEETTECNIKA | Engineering Trust. Delivering Excellence.</p>
-</footer>
-
-<script src="script.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-menu a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Video thumbnail fallback
+        const videoThumbs = [
+            { id: 'video1-thumb', videoId: 'BGzvRop_g_Y' },
+            { id: 'video2-thumb', videoId: 'NtXHSwtyzak' },
+            { id: 'video3-thumb', videoId: 'dQw4w9WgXcQ' }
+        ];
+        
+        // Set video thumbnails with fallback
+        videoThumbs.forEach(video => {
+            const img = document.getElementById(video.id);
+            if (img) {
+                img.onerror = function() {
+                    this.src = `https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`;
+                };
+            }
+        });
+        
+        // Video Modal Functions
+        function openVideo(videoId) {
+            const modal = document.getElementById('videoModal');
+            const frame = document.getElementById('videoFrame');
+            
+            frame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeVideo() {
+            const modal = document.getElementById('videoModal');
+            const frame = document.getElementById('videoFrame');
+            
+            frame.src = '';
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close video modal when clicking outside or pressing ESC
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideo();
+            }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('videoModal').style.display === 'flex') {
+                closeVideo();
+            }
+        });
+        
+        // Update active nav link based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Add animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.service-card, .product-card, .video-card, .achievement-card, .reg-item');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        // Set initial state for animation
+        window.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.service-card, .product-card, .video-card, .achievement-card, .reg-item');
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            animateOnScroll();
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // WhatsApp link confirmation
+        document.querySelector('a[href*="whatsapp"]').addEventListener('click', function(e) {
+            if (!confirm('You will be redirected to WhatsApp to contact M/S JEETTECNIKA. Continue?')) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
